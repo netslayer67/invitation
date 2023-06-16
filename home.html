@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <main class="w-full h-screen overflow-y-hidden flex justify-center bg-gray-100">
+        <div class="w-[500px] h-full overflow-y-auto overflow-x-hidden relative bg-white">
+            <header
+                class="fixed top-0 w-[500px] z-40 h-[60px] bg-white flex items-center justify-between px-5 border-b shadow">
+                <div class="flex items-center gap-2">
+                    <i class="fa fa-paper-plane"></i>
+                    <h1 class="text-sm font-bold text-black">Invitation</h1>
+                </div>
+                <button type="button" data-te-offcanvas-toggle data-te-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" data-te-ripple-init data-te-ripple-color="light">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </header>
+
+            <!-- offcanvas navbar -->
+            <div class="invisible w-[200px] h-full absolute top-0 right-0 z-[1045] bg-white bg-clip-padding text-neutral-700 shadow-sm outline-none transition duration-300 ease-in-out dark:bg-neutral-800 dark:text-neutral-200 [&[data-te-offcanvas-show]]:transform-none"
+                tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" data-te-offcanvas-init>
+                <div class="flex items-center justify-end p-4">
+
+                    <button type="button"
+                        class="box-content rounded-none border-none opacity-50 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                        data-te-offcanvas-dismiss>
+                        <span
+                            class="w-[1em] focus:opacity-100 disabled:pointer-events-none disabled:select-none disabled:opacity-25 [&.disabled]:pointer-events-none [&.disabled]:select-none [&.disabled]:opacity-25">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="offcanvas-body flex-grow overflow-y-auto">
+                    <div class="flex items-center justify-center mb-5">
+                        <img src="/img/avatar.png" width="100" class="rounded-full border-2" alt="">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="text-sm font-bold text-black text-center">Invitation</h1>
+                    </div>
+                    <nav class="w-full pl-2">
+                        <a href=""
+                            class="text-sm font-bold text-amber-200 bg-black block mb-2 px-5 py-3 rounded-s-xl hover:bg-amber-200 hover:text-black transition-all"><i
+                                class="fa fa-user mr-3"></i> Profile
+                            Saya</a>
+                        <a href=""
+                            class="text-sm font-bold text-amber-200 bg-black block mb-2 px-5 py-3 rounded-s-xl hover:text-black hover:bg-amber-200 transition-all"><i
+                                class="fa fa-door-open mr-3"></i> Keluar</a>
+                    </nav>
+                </div>
+            </div>
+            <!-- akhir offcanvas navbar -->
+
+            <div class="w-[500px] h-[60px] mb-3"></div>
+
+            <div class="px-2 relative mb-5">
+                <div class="w-full rounded-xl h-[30vh] overflow-hidden">
+                    <img src="img/jeremy-wong-weddings-464ps_nOflw-unsplash.jpg" width="500" alt="">
+                </div>
+                <div
+                    class="bg-black bg-opacity-40 absolute top-0 bottom-0 left-2 rounded-xl flex flex-col items-center justify-end py-5 right-2 z-30">
+                    <h1 class="text-white text-center font-medium text-sm uppercase">The wedding of <span
+                            class="text-white font-extrabold text-xl uppercase block">Harja & Ira</span></h1>
+                    <p class="text-white font-bold text-sm tracking-wide mb-2">Sabtu, 15 Oktober 2022</p>
+                    <a href="" class="px-10 bg-white rounded-md shadow py-2 text-black font-thin text-xs">
+                        <i class="fa fa-link"></i> https://invitation/
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full grid grid-cols-2 gap-2 mb-5 px-2">
+                <a href=""
+                    class="w-auto px-5 py-7 rounded-lg bg-amber-200 shadow-md font-bold text-sm text-black text-center hover:bg-black hover:text-amber-200 transition-all"><i
+                        class="fa fa-paper-plane"></i> Bagi Undangan</a>
+                <a href=""
+                    class="w-auto px-5 py-7 rounded-lg bg-black shadow-md font-bold text-sm text-amber-200 text-center hover:bg-amber-200 hover:text-black transition-all"><i
+                        class="fa fa-users"></i> Ucapan</a>
+            </div>
+
+            <div class="w-full px-2 mb-5">
+                <!--Tabs navigation-->
+                <ul class="w-full flex items-center justify-center" role="tablist" data-te-nav-ref>
+                    <li role="presentation" class="w-auto text-center mr-5">
+                        <a href="#tabs-home"
+                            class="block text-sm font-bold text-gray-400 data-[te-nav-active]:text-black"
+                            data-te-toggle="pill" data-te-target="#tabs-home" data-te-nav-active role="tab"
+                            aria-controls="tabs-home" aria-selected="true">RSVP & Ucapan</a>
+                    </li>
+                    <li role="presentation" class="w-auto text-center">
+                        <a href="#tabs-profile"
+                            class="block text-sm font-bold text-gray-400 data-[te-nav-active]:text-black "
+                            data-te-toggle="pill" data-te-target="#tabs-profile" role="tab" aria-controls="tabs-profile"
+                            aria-selected="false">Daftar Tamu</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Tabs content-->
+            <div class="mb-6 px-2">
+                <div class="hidden w-full px-2 opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                    id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-te-tab-active>
+                    <div class="w-full grid grid-cols-4 gap-2 mb-10">
+                        <div class="w-auto px-2 py-3 rounded-lg text-center bg-white shadow border">
+                            <h1 class="text-lg font-extrabold text-black">67</h1>
+                            <p class="text-xs font-bold text-black">Ucapan</p>
+                        </div>
+                        <div class="w-auto px-2 py-3 rounded-lg text-center bg-white shadow border">
+                            <h1 class="text-lg font-extrabold text-black">65</h1>
+                            <p class="text-xs font-bold text-black">Hadir</p>
+                        </div>
+                        <div class="w-auto px-2 py-3 rounded-lg text-center bg-white shadow border">
+                            <h1 class="text-lg font-extrabold text-black">2</h1>
+                            <p class="text-xs font-bold text-black">Tidak Hadir</p>
+                        </div>
+                        <div class="w-auto px-2 py-3 rounded-lg text-center bg-white shadow border">
+                            <h1 class="text-lg font-extrabold text-black">0</h1>
+                            <p class="text-xs font-bold text-black">Masih Ragu</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex gap-2 mb-5">
+                        <h1 class="w-10 h-10 rounded-full leading-10 bg-black text-sm text-white font-bold text-center">
+                            H</h1>
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h1 class="text-sm font-bold text-black">Herdi Firmansyah</h1>
+                                <span class="text-xs font-thin text-gray-700">15/02/2023 09:40</span>
+                            </div>
+                            <p
+                                class="text-[13px] bg-gray-100 shadow rounded-lg p-2 rounded-ss-none font-medium text-black">
+                                Selamat
+                                unutk kedua mempelai semoga dimudahkan
+                                segala urusannya.</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex gap-2 mb-5">
+                        <h1 class="w-10 h-10 rounded-full leading-10 bg-black text-sm text-white font-bold text-center">
+                            K</h1>
+                        <div>
+                            <div class="flex items-center justify-between mb-1">
+                                <h1 class="text-sm font-bold text-black">Khadijah</h1>
+                                <span class="text-xs font-thin text-gray-700">15/02/2023 09:40</span>
+                            </div>
+                            <p
+                                class="text-[13px] bg-gray-100 shadow rounded-lg p-2 rounded-ss-none font-medium text-black">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quod!.</p>
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <a href=""
+                            class="block text-center text-sm font-bold text-black bg-amber-200 rounded-md py-3">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="hidden w-full opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
+                    id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+                    <div class="mx-auto w-max px-5 py-4 mb-5 bg-white rounded-lg shadow text-center">
+                        <h1 class="text-lg font-extrabold text-black">191</h1>
+                        <p class="text-xs font-medium text-black">Total Tamu Undangan</p>
+                    </div>
+                    <div class="mb-2 border-t py-5">
+                        <h1 class="text-md font-bold text-center text-black">Daftar Tamu Undangan</h1>
+                    </div>
+                    <div>
+                        <h1 class="text-sm font-bold text-black">Nama</h1>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+</body>
+
+</html>
